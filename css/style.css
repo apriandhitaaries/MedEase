@@ -2006,7 +2006,7 @@ li.price-del i {
 }
 .page-breadcumb .breadcrumb-item.active {
   font-weight: 500;
-  color: #e12454;
+  color: #1669ad;
 }
 .page-breadcumb .breadcrumb-item + .breadcrumb-item::before {
   content: "|";
