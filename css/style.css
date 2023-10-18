@@ -1168,6 +1168,7 @@ input.main-search-input:-ms-input-placeholder {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 25px;
+  border-radius: 10px;
 }
 .section-text-green p {
   color: #899dab;
@@ -2291,36 +2292,42 @@ li.price-del i {
   top: 0;
   left: 0;
   right: 0;
+  border-radius: 10px;
 }
 .calculate-section .section-text p {
   font-size: 30px;
   color: #b4c8d7;
   line-height: 42px;
   padding-right: 35px;
+  border-radius: 10px;
 }
 .calculate-content {
   padding: 60px;
   background: #fff;
   padding-bottom: 0;
+  border-radius: 10px;
 }
 .calculate-box .nice-select {
+  border-radius: 10px;
   width: 100%;
   height: 70px;
   padding-top: 14px;
-  border-radius: 0;
+  border-radius: 10px;
   border: 2px solid #eee7ff;
   padding-left: 38px;
   margin-bottom: 20px;
 }
 .calculate-box .nice-select::after {
+  border-radius: 10px;
   margin-right: 18px;
   margin-top: -1px;
 }
 .calculate-box .nice-select .list {
   width: 100%;
-  border-radius: 0;
+  border-radius: 10px;
 }
 .calculate-form input {
+  border-radius: 10px;
   height: 70px;
   padding-left: 38px;
   width: 100%;
@@ -2329,18 +2336,22 @@ li.price-del i {
 }
 .calculate-form input::placeholder {
   color: #647589;
+  border-radius: 10px;
 }
 
 .calculate-box a {
   width: 100%;
+  border-radius: 10px;
 }
 .calculate-form {
   position: relative;
+  border-radius: 10px;
 }
 .calculate-form i {
   position: absolute;
   top: 28px;
   right: 30px;
+  border-radius: 10px;
 }
 /* hiring */
 .hire-text {
@@ -2455,11 +2466,13 @@ li.price-del i {
   border: 2px solid #d3e2f0;
   background-size: cover; /* Tambahkan baris ini */
   background-position: center center; /* Opsional, ini memastikan gambar tetap terpusat */
+  border-radius: 10px;
 }
 .appointment-area-3 .calculate-form input {
   border: 2px solid #d3e2f0;
   background-size: cover; /* Tambahkan baris ini */
   background-position: center center; /* Opsional, ini memastikan gambar tetap terpusat */
+  border-radius: 10px;
 }
 
 .appointment-form-2 input {
