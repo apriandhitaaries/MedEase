@@ -2334,7 +2334,7 @@ li.price-del i {
   padding: 60px;
   background: #fff;
   padding-bottom: 0;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .calculate-box .nice-select {
   border-radius: 10px;
@@ -2370,7 +2370,8 @@ li.price-del i {
 
 .calculate-box a {
   width: 100%;
-  border-radius: 10px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 .calculate-form {
   position: relative;
@@ -3626,9 +3627,9 @@ ul.cat li a:hover {
 }
 .basic-pagination ul li a:hover,
 .basic-pagination ul li.active a {
-  background: #e12454;
+  background: #1669ad;
   color: #ffffff;
-  box-shadow: 0px 8px 16px 0px rgba(254, 69, 54, 0.3);
+  box-shadow: 0px 4px 7px #5b94c3;
 }
 
 .basic-pagination-2 ul li a {
@@ -3641,10 +3642,10 @@ ul.cat li a:hover {
 }
 .basic-pagination-2 ul li a:hover,
 .basic-pagination-2 ul li.active a {
-  background: #e12454;
+  background: #1669ad;
   color: #ffffff;
-  border-color: #e12454;
-  box-shadow: 0px 8px 16px 0px rgba(254, 69, 54, 0.3);
+  border-color: #1669ad;
+  box-shadow: 0px 4px 7px #5b94c3;
 }
 
 /* 20. Contact */
