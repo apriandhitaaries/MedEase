@@ -267,6 +267,29 @@ label {
   position: relative;
 }
 
+.btn-baca {
+  -moz-user-select: none;
+  background: linear-gradient(to left, #1669ad, #5693c5);
+  border: medium none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 24px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
 .btn-cancel {
   -moz-user-select: none;
   background: rgb(100, 0, 0) 1;
@@ -298,6 +321,12 @@ label {
 .btn-cancel:hover {
   background: rgb(57, 0, 0) 1;
   color: #fff;
+}
+
+.btn-baca:hover {
+  color: #062a4d;
+  background: linear-gradient(to right, #1669ad, #5693c5);
+  box-shadow: 0px 4px 7px #5b94c3;
 }
 
 .btn-icon {
@@ -2844,7 +2873,7 @@ li.price-del i {
 }
 
 .post-meta span a:hover {
-  color: #e12454;
+  color: #0d4b7e;
 }
 
 .post-meta span i {
@@ -2889,7 +2918,7 @@ li.price-del i {
 }
 
 .blog-title a:hover {
-  color: #e12454;
+  color: #0d4b7e;
 }
 
 .read-more {
@@ -2902,7 +2931,7 @@ li.price-del i {
   color: #e12454;
 }
 .read-more:hover {
-  color: #8fb569;
+  color: #0d4b7e;
 }
 
 .read-more i {
@@ -3045,7 +3074,7 @@ li.price-del i {
   top: 0;
   right: 0;
   height: 100%;
-  background: #062a4d;
+  background: linear-gradient(to top, #1669ad, #5693c5);
   padding: 0 25px;
   color: #ffffff;
   line-height: 60px;
@@ -3053,7 +3082,7 @@ li.price-del i {
 }
 
 .search-form button:hover {
-  background: #e12454;
+  background: linear-gradient(to bottom, #1669ad, #1e3c54);
 }
 
 .widget-title {
@@ -3253,8 +3282,8 @@ ul.cat li a:hover {
 
 .blog-post-tag a:hover {
   color: #fff;
-  background: #e12454;
-  border-color: #e12454;
+  background: #0d4b7e;
+  border-color: #0d4b7e;
 }
 
 .blog-post-tag a:last-child {
@@ -3278,7 +3307,7 @@ ul.cat li a:hover {
 }
 
 .blog-share-icon a:hover {
-  color: #e12454;
+  color: #0d4b7e;
 }
 
 .blog-share-icon a:last-child {
@@ -4424,7 +4453,7 @@ p.lost-password a:hover {
 
 .coupon-info p.form-row input[type="submit"]:hover,
 p.checkout-coupon input[type="submit"]:hover {
-  background: #e12454 none repeat scroll 0 0;
+  background: #1669ad none repeat scroll 0 0;
 }
 
 .coupon-info p.form-row input[type="checkbox"] {
