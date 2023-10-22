@@ -367,9 +367,20 @@ label {
 }
 
 .btn-icon:hover {
-  background: linear-gradient(to left, #0d4b7e, #346791);
+  background: linear-gradient(to right, #1669ad, #2f5a7d);
   color: #fff;
 }
+
+.btn-panjang:hover {
+  background: linear-gradient(to right, #1669ad, #2f5a7d);
+  color: #fff;
+}
+
+.btn-panjang-cancel:hover {
+  background: linear-gradient(to right, #e12454, #84253c);
+  color: #fff;
+}
+
 .btn-icon-green:hover {
   background-color: rgb(225, 36, 84);
   box-shadow: 0px 8px 16px 0px rgba(225, 36, 84, 0.2);
@@ -2359,6 +2370,7 @@ li.price-del i {
   border-radius: 10px;
   height: 70px;
   padding-left: 38px;
+  padding-right: 25px;
   width: 100%;
   border: 2px solid #eee7ff;
   position: relative;
@@ -3005,9 +3017,9 @@ li.price-del i {
 
 .post-text blockquote {
   background: #062a4d;
-  padding: 50px;
+  padding: 40px;
   position: relative;
-  padding-left: 120px;
+  padding-left: 40px;
 }
 
 @media (max-width: 767px) {
@@ -3024,7 +3036,6 @@ li.price-del i {
 }
 
 .post-text blockquote::before {
-  content: "\f10d";
   left: 50px;
   top: 50px;
   position: absolute;
