@@ -14,7 +14,7 @@ Fitur-fitur (Front-end) yang ada pada aplikasi MedEase:
 - About Us
   Pada fitur ini berisikan informasi tentang pengembang, tujuan, visi, dan misi dari Website MedEase.
 
-  Pengembang Website MedEase (Medical Ease)
+Pengembang Website MedEase (Medical Ease)
   - Faishal Fariz Hidayatullah (215150607111014)
   - Apriandhita Aries Prayoga  (215150607111019)
   - Resty Cahyani Pradita      (215150601111016)
