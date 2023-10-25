@@ -4,12 +4,16 @@ MedEase merupakan pendaftaran fasilitas kesehatan secara online yang dapat membe
 
 Fitur-fitur (Front-end) yang ada pada aplikasi MedEase:
 - Pendaftaran
-- Pasien Pada fitur ini pasien dapat mendaftarkan diri ke puskesmas atau fasilitas kesehatan dengan tujuan mengumpulkan informasi penting mengenai data diri pasien dan keperluan medis, sehingga staff medis dapat memberikan perawatan yang sesuai dan efektif untuk pasien.
+  
+  Pasien Pada fitur ini pasien dapat mendaftarkan diri ke puskesmas atau fasilitas kesehatan dengan tujuan mengumpulkan informasi penting mengenai data diri pasien dan keperluan medis, sehingga staff medis dapat memberikan perawatan yang sesuai dan efektif untuk pasien.
 - Batal Daftar
+  
   Pada fitur ini pasien dapat melakukan tindakan pembatalan atau penghapusan pendaftaran diri pada puskesmas atau fasilitas kesehatan.
 - Cek Antrian
+  
   Pada fitur ini pasien dapat melakukan tindakan memeriksa atau mengkonfirmasi nomor urut pasien dalam antrian atau daftar tunggu di puskesmas atau fasilitas kesehatan.
 - Artikel
+  
   Pada fitur ini pasien dapat membaca artikel kesehatan dan berita terupdate terkait dengan kesehatan.
 - About Us
   
