@@ -19,6 +19,12 @@ Fitur-fitur (Front-end) yang ada pada aplikasi MedEase:
   
   Pada fitur ini berisikan informasi tentang pengembang, tujuan, visi, dan misi dari Website MedEase.
 
+# UI Kit
+| Color     | Hex     | 
+| :---:     | :---:   | 
+| Primary   | #0E5895 |
+| Secondary | #1669AD |
+
 # Pengembang Website MedEase (Medical Ease)
   - Faishal Fariz Hidayatullah (215150607111014)
   - Apriandhita Aries Prayoga  (215150607111019)
