@@ -21,9 +21,43 @@ Fitur-fitur (Front-end) yang ada pada aplikasi MedEase:
 
 # UI Kit
 | Color     | Hex     | 
-| :---:     | :---:   | 
+| ---       | ---     | 
 | Primary   | #0E5895 |
 | Secondary | #1669AD |
+| Neutral   | #FFFFFF |
+| Error     | #DC3545 |
+
+# Rancangan Basis Data
+Tabel Data Pasien
+| No  | Nama Kolom | Tipe Data | Panjang Data | Contoh Data |
+|:--- | :---       | :---      | :---         | :---        |
+|1    | id         | int       | 11           | 1           |
+|2    | nama       | varchar   | 255          | 'Faishal'   |
+|3    | nik        | varchar   | 255          | '1234567890'|
+
+Tabel Data Pasiens(Daftar ke faskes)
+| No  | Nama Kolom    | Tipe Data | Panjang Data | Contoh Data         |
+|:--- | :---          | :---      | :---         | :---                |
+|1    | id            | int       | 11           | 24                  |
+|2    | poliklinik    | varchar   | 32           | '2'                 |
+|3    | tanggal       | date      | -            | 2023-10-30          |
+|4    | nomor_antrean | varchar   | 255          | '20231030005'       |
+|5    | nik           | varchar   | 32           | '1234567890'        |
+|6    | updated_at    | timestamp | -            | 2023-10-29 03:09:12 |
+|7    | cretaed_at    | time      | -            | 10:09:12            |
+
+Tabel User
+| No  | Nama Kolom        | Tipe Data | Panjang Data | Contoh Data                 |
+|:--- | :---              | :---      | :---         | :---                        |
+|1    | id                | bigint    | 20           | 6                           |
+|2    | name              | varchar   | 255          | 'Apriandhita Aries Prayoga' |            
+|3    | email             | varchar   | 255          | 'apriandhitaaries@gmail.com'|
+|4    | email_verified_at | timestamp | -            | NULL                        |
+|5    | password          | varchar   | 255          | 'ghefirasm24'               |
+|6    | remeber_token     | varchar   | 100          | NULL                        |
+|7    | updated_at        | timestamp | -            | 2023-10-29 15:50:42         |
+|8    | cretaed_at        | timestamp | -            | 2023-10-29 15:50:42         |
+
 
 # Pengembang Website MedEase (Medical Ease)
   - Faishal Fariz Hidayatullah (215150607111014)
