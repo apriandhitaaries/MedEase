@@ -1,4 +1,4 @@
-# MedEase (Medical Ease)
+![Screenshot 2023-10-30 205501](https://github.com/apriandhitaaries/MedEase/assets/103373921/5fcb5a33-a23d-44b7-91e3-e4bf13b25456)# MedEase (Medical Ease)
 
 MedEase merupakan pendaftaran fasilitas kesehatan secara online yang dapat memberikan banyak manfaat bagi masyarakat, seperti mengurangi waktu tunggu dan antrian, mempercepat proses pendaftaran, serta mempermudah akses masyarakat ke fasilitas kesehatan. Selain itu, MedEase juga dapat membantu mengoptimalkan pelayanan kesehatan. Dengan adanya sistem pendaftaran online, petugas pendaftaran akan lebih mudah mengatur jadwal pasien dan mengoptimalkan waktu pelayanan. Hal ini akan memungkinkan pelayanan kesehatan menjadi lebih efisien dan efektif. Selain itu juga, MedEase ini memiliki keunggulan dibandingkan dengan Mobile JKN karena dapat digunakan oleh pasien baik yang menggunakan layanan BPJS maupun pasien umum.
 
@@ -58,6 +58,22 @@ Tabel User
 |7    | updated_at        | timestamp | -            | 2023-10-29 15:50:42         |
 |8    | cretaed_at        | timestamp | -            | 2023-10-29 15:50:42         |
 
+# Data Pasien Untuk Mendaftar
+Gunakan NIK data pasien berikut jika anda ingin mendaftar ke dalam faskes MedEase:
+| Id  | Nama Pasien      | NIK            | 
+|:--- | :---             | :---           | 
+|1    | Faishal          | 1234567890     | 
+|2    | Resty            | 0987654321     | 
+|3    | John Doe         | 1111111111     | 
+|4    | Jane Doe         | 2222222222     | 
+|5    | Bob Smith        | 3333333333     | 
+|6    | Alice Johnson    | 4444444444     | 
+|7    | Michael Brown    | 5555555555     | 
+|8    | Emily Davis      | 6666666666     | 
+|9    | William Wilson   | 7777777777     | 
+|10   | Olivia Taylor    | 8888888888     | 
+|11   | James Jones      | 9999999999     | 
+|12   | Sophia Harris    | 1010101010     | 
 
 # Pengembang Website MedEase (Medical Ease)
   - Faishal Fariz Hidayatullah (215150607111014)
