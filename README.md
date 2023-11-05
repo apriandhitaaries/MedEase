@@ -1,7 +1,12 @@
 # MedEase (Medical Ease)
-<p align="center"><a href="https://medease10.000webhostapp.com/" target="_blank"><img src="https://github.com/apriandhitaaries/MedEase/assets/103373921/8a4c41ee-f81e-4096-bf36-4caa7122a39f" width="400" alt="MedEase Logo"></a></p>
+<p align="center" style="padding-top: 100px; padding-bottom: 100px;">
+  <a href="https://medease10.000webhostapp.com/" target="_blank">
+    <img src="https://github.com/apriandhitaaries/MedEase/assets/103373921/8a4c41ee-f81e-4096-bf36-4caa7122a39f" width="400" alt="MedEase Logo">
+  </a>
+</p>
 
-
+# Link Website
+https://medease10.000webhostapp.com/
 
 MedEase merupakan pendaftaran fasilitas kesehatan secara online yang dapat memberikan banyak manfaat bagi masyarakat, seperti mengurangi waktu tunggu dan antrian, mempercepat proses pendaftaran, serta mempermudah akses masyarakat ke fasilitas kesehatan. Selain itu, MedEase juga dapat membantu mengoptimalkan pelayanan kesehatan. Dengan adanya sistem pendaftaran online, petugas pendaftaran akan lebih mudah mengatur jadwal pasien dan mengoptimalkan waktu pelayanan. Hal ini akan memungkinkan pelayanan kesehatan menjadi lebih efisien dan efektif. Selain itu juga, MedEase ini memiliki keunggulan dibandingkan dengan Mobile JKN karena dapat digunakan oleh pasien baik yang menggunakan layanan BPJS maupun pasien umum.
 
