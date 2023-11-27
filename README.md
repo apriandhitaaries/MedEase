@@ -1,6 +1,6 @@
 # MedEase (Medical Ease)
 <p align="center" style="padding-top: 100px; padding-bottom: 100px;">
-  <a href="https://medease10.000webhostapp.com/" target="_blank">
+  <a href="https://medease100.000webhostapp.com/" target="_blank">
     <img src="https://i.postimg.cc/d1qWJ1Gb/Group-100.png" width="400" alt="MedEase Logo">
   </a>
 </p>
@@ -25,7 +25,7 @@ Fitur-fitur (Front-end) yang ada pada aplikasi MedEase:
   Pada fitur ini berisikan informasi tentang pengembang, tujuan, visi, dan misi dari Website MedEase.
 
 # Link Website
-https://medease10.000webhostapp.com/
+https://medease100.000webhostapp.com/
 
 # UI Kit
 | Color     | Hex     | 
