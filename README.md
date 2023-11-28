@@ -7,7 +7,8 @@
 
 MedEase merupakan pendaftaran fasilitas kesehatan secara online yang dapat memberikan banyak manfaat bagi masyarakat, seperti mengurangi waktu tunggu dan antrian, mempercepat proses pendaftaran, serta mempermudah akses masyarakat ke fasilitas kesehatan. Selain itu, MedEase juga dapat membantu mengoptimalkan pelayanan kesehatan. Dengan adanya sistem pendaftaran online, petugas pendaftaran akan lebih mudah mengatur jadwal pasien dan mengoptimalkan waktu pelayanan. Hal ini akan memungkinkan pelayanan kesehatan menjadi lebih efisien dan efektif. Selain itu juga, MedEase ini memiliki keunggulan dibandingkan dengan Mobile JKN karena dapat digunakan oleh pasien baik yang menggunakan layanan BPJS maupun pasien umum.
 
-Fitur-fitur (Front-end) yang ada pada aplikasi MedEase:
+# Fitur-fitur yang ada pada aplikasi MedEase:
+## Aktor Pasien MedEase
 - Pendaftaran
   
   Pada fitur ini pasien dapat mendaftarkan diri ke puskesmas atau fasilitas kesehatan dengan tujuan mengumpulkan informasi penting mengenai data diri pasien dan keperluan medis, sehingga staff medis dapat memberikan perawatan yang sesuai dan efektif untuk pasien.
@@ -23,6 +24,13 @@ Fitur-fitur (Front-end) yang ada pada aplikasi MedEase:
 - About Us
   
   Pada fitur ini berisikan informasi tentang pengembang, tujuan, visi, dan misi dari Website MedEase.
+
+## Aktor Pasien MedEase
+- Login Admin
+
+- Kelola Data Pasien
+
+- Kelola Data Artikel
 
 # Link Website
 https://medease100.000webhostapp.com/
@@ -82,6 +90,12 @@ Gunakan NIK data pasien berikut jika anda ingin mendaftar ke dalam faskes MedEas
 |10   | Olivia Taylor    | 8888888888     | 
 |11   | James Jones      | 9999999999     | 
 |12   | Sophia Harris    | 1010101010     | 
+
+# Data Admin
+Gunakan Email dan Password data Admin berikut jika anda ingin masuk ke dalam dashboard admin MedEase:
+| Id  | Email Admin      | NIK            | 
+|:--- | :---             | :---           | 
+|1    | admin1@gmail.com | admin123       | 
 
 # Pengembang Website MedEase (Medical Ease)
   - Faishal Fariz Hidayatullah (215150607111014)
