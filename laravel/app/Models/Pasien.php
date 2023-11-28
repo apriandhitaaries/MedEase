@@ -11,7 +11,7 @@ class Pasien extends Model
 
     protected $fillable = [
         'nik',
-        'poliklinik_id',
+        'poliklinik',
         'tanggal_daftar',
         'nomor_antrean'
     ];

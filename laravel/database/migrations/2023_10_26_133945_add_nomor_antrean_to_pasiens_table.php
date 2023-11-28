@@ -14,7 +14,6 @@ return new class extends Migration
     Schema::table('pasiens', function (Blueprint $table) {
         $table->bigIncrements('nomor_antrean')->after('tanggal');
     });
-    DB::statement('ALTER TABLE pasiens ADD nomor_antrean INT NOT NULL AUTO_INCREMENT AFTER tanggal_daftar, ADD UNIQUE INDEX (nomor_antrean)');
 }
 
 

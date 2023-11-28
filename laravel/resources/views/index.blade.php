@@ -12,6 +12,16 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
   <!-- CSS here -->
+  <style>
+  @media only screen and (max-width: 600px) {
+    .text-tengah {
+      text-align: center;
+      padding-left: 65px; /* Tambahkan margin kiri 10px pada tampilan mobile */
+      padding-right: -20px; /* Tambahkan margin kiri 10px pada tampilan mobile */
+    }
+  }
+
+</style>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/animate.min.css" />
@@ -76,6 +86,9 @@
                     <li>
                       <a href="/aboutus">About Us</a>
                     </li>
+                    <li>
+                      <a href="/login" class="">Admin</a>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -103,7 +116,7 @@
                     <div class="hero-slider-caption">
                       <h5 data-animation="fadeInUp" data-delay=".2s">Kami di sini untuk perawatan Anda!</h5>
                       <h1 data-animation="fadeInUp" data-delay=".4s">Melayani dengan Sepenuh Hati.</h1>
-                      <p data-animation="fadeInUp" data-delay=".6s" class="text-justify">Pelayanan yang kami lakukan bertujuan untuk memenuhi
+                      <p data-animation="fadeInUp" data-delay=".6s" class="text-tengah text-justify">Pelayanan yang kami lakukan bertujuan untuk memenuhi
                         kebutuhan dan memberikan manfaat yang maksimal bagi pasien dan dengan rasa tanggung jawab yang
                         besar.</p>
                     </div>
@@ -194,57 +207,39 @@
             </div>
           </div>
         </div>
+  
         <div class="row">
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="latest-news-box mb-30">
-              <div class="latest-news-thumb mb-35">
-                <img src="img/blog/blog-thumb-1.jpg" alt="" />
-              </div>
-              <div class="latest-news-content">
-                <div class="news-meta mb-10">
-                  <span><a href="#" class="news-tag" style="color: #0E5895;">KESEHATAN</a></span>
-                </div>
-                <h3 style="font-size: 25px; padding-right: 50px;"><a href="#">Ketahui Segala Hal
-                    Mengenai COVID-19.</a></h3>
-                <p>Penyakit jantung merupakan salah satu penyakit yang paling umum dan berbahaya di dunia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="latest-news-box mb-30">
-              <div class="latest-news-thumb mb-35">
-                <img src="img/blog/blog-thumb-2.jpg" alt="" />
-              </div>
-              <div class="latest-news-content">
-                <div class="news-meta mb-10">
-                  <span><a href="#" class="news-tag" style="color: #0E5895;">KESEHATAN</a></span>
-                  <span><a href="#" class="news-tag" style="color: #0E5895;">GAYA HIDUP</a></span>
+        @foreach($artikels->take(2) as $artikel)
 
+        <div class="col-xl-4 col-lg-6 col-md-6">
+
+          <div class="latest-news-box mb-30">
+              <div class="latest-news-thumb mb-35">
+              @if ($artikel->gambar)
+        <img src="{{ asset('storage/' . $artikel->gambar) }}" alt="Gambar Artikel">
+    @endif              </div>
+              <div class="latest-news-content">
+                <div class="news-meta mb-10">
                 </div>
-                <h3 style="font-size: 25px;"><a href="#">Tips untuk Meningkatkan Kesehatan Mental
-                    Anda.</a></h3>
-                <p>Ingatlah bahwa kesehatan mental adalah perjalanan, dan setiap orang memiliki kebutuhan yang berbeda.
-                </p>
+                <h3 style="font-size: 25px; padding-right: 50px;"><a href="{{ route('artikels.show', $artikel->id) }}">{{ $artikel->judul }}</a></h3>
+                <p>{{ Str::limit($artikel->konten, 150) }}</p>
               </div>
             </div>
           </div>
+          @endforeach
+
+            
           <div class="col-xl-4 col-lg-12 col-md-12">
             <div class="recent-news-list mb-120">
-              <div class="latest-news-content singl-news news-border-bottom">
-                <h3><a href="#">Ketahui Segala Hal Mengenai COVID-19.</a></h3>
-                <span class="meta-date"><i class="far fa-calendar"></i>18 Okt 2023</span>
-                <span class="meta-date"><a href="#"><i class="far fa-comments"></i>33 Comments</a></span>
-              </div>
-              <div class="latest-news-content singl-news news-border-bottom">
-                <h3><a href="#">Tips untuk Meningkatkan Kesehatan Mental Anda.</a></h3>
-                <span class="meta-date"><i class="far fa-calendar"></i>19 Okt 2023</span>
-                <span class="meta-date"><a href="#"><i class="far fa-comments"></i>33 Comments</a></span>
-              </div>
-              <div class="latest-news-content singl-news">
-                <h3><a href="#">Perawatan Kulit yang Alami: Rahasia Cantik dan Sehat dari Dalam</a></h3>
-                <span class="meta-date"><i class="far fa-calendar"></i>20 Okt 2023</span>
-                <span class="meta-date"><a href="#"><i class="far fa-comments"></i>33 Comments</a></span>
-              </div>
+            @foreach($artikels->take(3) as $artikel)
+  
+            <div class="latest-news-content singl-news news-border-bottom">
+                <h3><a href="{{ route('artikels.show', $artikel->id) }}">{{ $artikel->judul }}</a></h3>
+                <span><i class="far fa-calendar-check" style="color: #0E5895;"></i> {{ $artikel->created_at->format('d F Y') }}
+ </span>              </div>
+              @endforeach
+  
+              
             </div>
           </div>
         </div>
@@ -325,7 +320,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-12">
-              <div class="footer-copyright text-center">
+              <div class="footer-copyright">
                 <p class="white-color">Copyright by@ MedEase Team - 2023</p>
               </div>
             </div>

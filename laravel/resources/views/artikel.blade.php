@@ -76,6 +76,9 @@
                     <li>
                       <a href="/aboutus">About Us</a>
                     </li>
+                    <li>
+                      <a href="/login" class="">Admin</a>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -122,59 +125,33 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <article class="postbox post format-image mb-40">
+          @foreach($artikels as $artikel)
+  
+          <article class="postbox post format-image mb-40">
               <div class="postbox__thumb">
-                <a href="#">
-                  <img src="img/blog/b1.jpg" alt="blog image" />
-                </a>
+              @if ($artikel->gambar)
+        <img src="{{ asset('storage/' . $artikel->gambar) }}" alt="Gambar Artikel">
+    @endif
               </div>
               <div class="postbox__text p-50">
                 <div class="post-meta mb-15">
-                  <span><i class="far fa-calendar-check" style="color: #0E5895;"></i> 01 Januari 2023 </span>
-                  <span><a href="#"><i class="far fa-eye" style="color: #0E5895;"></i> 240x dilihat</a></span>
+                  <span><i class="far fa-calendar-check" style="color: #0E5895;"></i> {{ $artikel->created_at->format('d F Y') }}
+ </span>
                 </div>
                 <h3 class="blog-title">
-                  <a href="#">Mencegah Penyakit Jantung: Gaya Hidup Sehat untuk Jantung yang Kuat.</a>
+                  <a href="{{ route('artikels.show', $artikel->id) }}">{{ $artikel->judul }}</a>
                 </h3>
                 <div class="post-text mb-20">
                   <p>
-                    Penyakit jantung merupakan salah satu penyakit yang paling umum dan berbahaya di dunia. Namun,
-                    dengan adopsi gaya hidup sehat, kita dapat meminimalkan risiko terkena penyakit jantung dan menjaga
-                    jantung kita tetap kuat. Artikel ini akan mengulas beberapa langkah praktis yang dapat diambil dalam
-                    menjaga kesehatan jantung dan mencegah penyakit jantung.
+                  {{ Str::limit($artikel->konten, 150) }}
                   </p>
                 </div>
                 <div class="read-more mt-30">
-                  <a href="#" class="btn-baca">Baca Selengkapnya</a>
+                  <a href="{{ route('artikels.show', $artikel->id) }}" class="btn-baca">Baca Selengkapnya</a>
                 </div>
               </div>
             </article>
-            <article class="postbox post format-image mb-40">
-              <div class="postbox__thumb">
-                <a href="#">
-                  <img src="img/blog/b2.jpg" alt="blog image" />
-                </a>
-              </div>
-              <div class="postbox__text p-50">
-                <div class="post-meta mb-15">
-                  <span><i class="far fa-calendar-check" style="color: #0E5895;"></i> 01 Januari 2023</span>
-                  <span><a href="#"><i class="far fa-eye" style="color: #0E5895;"></i>240x dilihat</a></span>
-                </div>
-                <h3 class="blog-title">
-                  <a href="#">Tips untuk Meningkatkan Kesehatan Mental Anda.</a>
-                </h3>
-                <div class="post-text mb-20">
-                  <p>
-                    Ingatlah bahwa kesehatan mental adalah perjalanan, dan setiap orang memiliki kebutuhan yang berbeda.
-                    Jika Anda mengalami kesulitan, jangan ragu untuk mencari bantuan dari profesional kesehatan mental.
-                  </p>
-                </div>
-                <div class="read-more mt-30">
-                  <a href="#" class="btn-baca">Baca Selengkapnya</a>
-                </div>
-              </div>
-            </article>
-
+            @endforeach
             <article class="postbox post format-quote mb-40">
               <div class="post-text">
                 <blockquote>
@@ -183,22 +160,7 @@
                 </blockquote>
               </div>
             </article>
-            <div class="basic-pagination basic-pagination-2 mb-40">
-              <ul>
-                <li>
-                  <a href="#"><i class="fas fa-angle-double-left"></i></a>
-                </li>
-                <li><a href="#">01</a></li>
-                <li><a href="#">02</a></li>
-                <li><a href="#">03</a></li>
-                <li>
-                  <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-angle-double-right"></i></a>
-                </li>
-              </ul>
-            </div>
+            
           </div>
           <div class="col-lg-4">
             <div class="widget mb-40">
@@ -206,36 +168,13 @@
                 <span class="animate-border"></span>
                 <h3 class="widget-title">Cari Artikel</h3>
               </div>
-              <form class="search-form">
-                <input type="text" placeholder="Judul Artikel" />
+              <form class="search-form" action="{{ route('artikels.search') }}" method="GET">
+              <input type="text" class="form-control" placeholder="Masukkan keyword" id="keyword" name="keyword" required>
                 <button type="submit"><i class="fas fa-search"></i></button>
               </form>
             </div>
 
-            <div class="widget mb-40">
-              <div class="widget-title-box mb-30">
-                <span class="animate-border"></span>
-                <h3 class="widget-title">Kategori Artikel</h3>
-              </div>
-              <ul class="cat">
-                <li>
-                  <a href="#">Gaya Hidup</a>
-                </li>
-                <li>
-                  <a href="#">Kesehatan</a>
-                </li>
-                <li>
-                  <a href="#">Obat-obatan</a>
-                </li>
-                <li>
-                  <a href="#">Olahraga</a>
-                </li>
-                <li>
-                  <a href="#">Berita Puskesmas</a>
-                </li>
-              </ul>
-            </div>
-
+            
           </div>
         </div>
       </div>

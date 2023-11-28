@@ -75,6 +75,9 @@
                     <li>
                       <a href="/aboutus">About Us</a>
                     </li>
+                    <li>
+                      <a href="/login" class="">Admin</a>
+                    </li>
                   </ul>
                 </nav>
               </div>

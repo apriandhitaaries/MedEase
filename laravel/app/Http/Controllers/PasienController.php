@@ -51,7 +51,7 @@ class PasienController extends Controller
 
     public function edit($id)
     {
-        $pasien = Pasien::find($id);
+        $pasien = Pasien::findOrFail($id);
         return view('pasiens.edit', compact('pasien'));
     }
 
@@ -60,17 +60,20 @@ class PasienController extends Controller
         $request->validate([
             'poliklinik' => 'required|string|max:255',
             'tanggal' => 'required|date',
-            'nik' => 'required|string|max:255',
+
         ]);
+        
+        $pasien = Pasien::findOrFail($id);
 
-        $pasien = Pasien::find($id);
-        $pasien->poliklinik = $request->input('poliklinik');
-        $pasien->tanggal = $request->input('tanggal');
-        $pasien->nik = $request->input('nik');
-        $pasien->save();
+            // Perbarui data pasien
+    $pasien->update([
+        'poliklinik' => $request->input('poliklinik'),
+        'tanggal' => $request->input('tanggal'),
 
-        return redirect()->back()->with('success', 'Pendaftaran berhasil!');
-    }
+    ]);
+
+    return redirect()->route('pasiens.index')->with('success', 'Data pasien berhasil diperbarui');
+}
 
     public function destroy($id)
     {
@@ -79,4 +82,5 @@ class PasienController extends Controller
 
         return redirect()->route('pasiens.index')->with('success', 'Data pasien berhasil dihapus!');
     }
+    
 }

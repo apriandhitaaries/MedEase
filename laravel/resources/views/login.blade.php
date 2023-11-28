@@ -78,6 +78,9 @@
                     <li>
                       <a href="/aboutus">About Us</a>
                     </li>
+                    <li>
+                      <a href="/login" class="">Admin</a>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -120,7 +123,7 @@
         <!-- hero-area end -->
 
 <!-- login Area Strat-->
-<section class="login-area pt-100 pb-100">
+<section class="login-area pt-100 pb-200">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
@@ -128,8 +131,8 @@
               <h3 class="text-center mb-60">Login Admin MedEase</h3>
               <form action="{{ url('/login') }}" method="post">
                 @csrf
-                <label for="email">Username</label>
-                <input id="email" name="email" type="text" placeholder="Masukkan username admin..." autofocus required />
+                <label for="email">Email Admin</label>
+                <input id="email" name="email" type="text" placeholder="Masukkan email admin..." autofocus required />
                 <label for="password">Password</label>
                 <input id="password" name="password" type="password" placeholder="Masukkan password..." required />
                 <div class="login-action mb-20 fix">
