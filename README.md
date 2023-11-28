@@ -27,12 +27,13 @@ MedEase merupakan pendaftaran fasilitas kesehatan secara online yang dapat membe
 
 ## Aktor Pasien MedEase
 - Login Admin
+
   Pada fitur ini digunakan untuk masuk ke halaman dashboard
-
 - Kelola Data Pasien
-  Pada fitur ini admin dapat mengubah tanggal pendaftaran, mengubah polikilnik ataupun menghapus pendaftaran
 
+  Pada fitur ini admin dapat mengubah tanggal pendaftaran, mengubah polikilnik ataupun menghapus pendaftaran
 - Kelola Data Artikel
+
   Pada fitur ini admin dapat mengubah artikel, menghapus artikel, ataupun menambahkan artikel
 
 # Link Website
