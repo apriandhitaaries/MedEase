@@ -25,7 +25,7 @@ MedEase merupakan pendaftaran fasilitas kesehatan secara online yang dapat membe
   
   Pada fitur ini berisikan informasi tentang pengembang, tujuan, visi, dan misi dari Website MedEase.
 
-## Aktor Pasien MedEase
+## Aktor Admin MedEase
 - Login Admin
 
   Pada fitur ini digunakan untuk masuk ke halaman dashboard admin
